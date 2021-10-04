@@ -60,7 +60,12 @@ function App() {
           >
             +
           </button>
-          <span id="passenger-count" className="visually-hidden" role="status">
+          <span
+            id="passenger-count"
+            className="visually-hidden"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
             {passengerCount}명
           </span>
         </section>
